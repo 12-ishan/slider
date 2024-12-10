@@ -11,7 +11,7 @@ export const metadata = {
     "India's first 1-year full-time post graduate public policy programme with a focus on design thinking and management. Shape your policy journey with ISPP's flagship PG Programme in Public Policy.",
   keywords: "",
   viewport: "width=device-width, initial-scale=1",
-  charset: "utf-8",
+  charSet: "utf-8",
 };
 
 export default function RootLayout({ children }) {
@@ -26,6 +26,17 @@ export default function RootLayout({ children }) {
 
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css'/>
 
+        <link
+  rel="stylesheet"
+  type="text/css"
+  charSet="UTF-8"
+  href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+/>
       
         <script
           dangerouslySetInnerHTML={{

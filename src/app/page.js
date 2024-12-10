@@ -1,5 +1,7 @@
 "use client"
 import { useEffect } from "react";
+import SliderOne from './components/SliderOne';
+
 
 
 export default function Home() {
@@ -17,13 +19,14 @@ export default function Home() {
 
   return (
     <>
-    <section className="top-strip-section">
-<div className="container">
-<div className="row">
-<p>Applications submitted by 30<sup>th</sup> June are eligible to participate in free bridge classes | <strong><a href="#apply-now">Apply Now</a></strong></p>
-</div>
-</div>
-</section>
+      <section className="top-strip-section">
+        <div className="container">
+          <div className="row">
+            <p>Applications submitted by 30<sup>th</sup> June are eligible to participate in free bridge classes | <strong><a href="#apply-now">Apply Now</a></strong>
+            </p>
+          </div>
+        </div>
+      </section>
 
 <div className="header" id="myHeader">
 <section className="menu-section">
@@ -61,8 +64,10 @@ export default function Home() {
 <section className="banner-section content" id="apply-now">
 <div className="row">
 <div className="col-md-8">
+
 <div className="slider multiple-items1">
-<div>
+<SliderOne/>
+{/* <div>
 <img src="/assets/images/creating-next-gen-policy-leaders-for-a-rising-india-banner.jpg" alt="" title=""/>
 <img src="/assets/images/creating-next-gen-policy-leaders-for-a-rising-india-banner-new.jpg" alt="" title="" className="banner-pic"/>
 </div>
@@ -80,7 +85,7 @@ export default function Home() {
 <div>
 <img src="/assets/images/lead-policy-change-with-our-partners-banner.jpg" alt="" title=""/>
 <img src="/assets/images/lead-policy-change-with-our-partner-banner-new.jpg" alt="" title="" className="banner-pic"/>
-</div>
+</div> */}
 
 </div>
 {/* <!--<h1><strong>Lorem ipsum dolor sit amet</strong></h1>
@@ -122,45 +127,45 @@ export default function Home() {
 
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css'/>
 
-<section class="new-section">
-<div class="container">
-<h1 class="title" id="why-choose"><strong>Why choose ISPP’s One year programme in Public Policy?</strong></h1>
-<div class="row">
-<div class="col-md-8">
+<section className="new-section">
+<div className="container">
+<h1 className="title" id="why-choose"><strong>Why choose ISPP’s One year programme in Public Policy?</strong></h1>
+<div className="row">
+<div className="col-md-8">
 
-<div class="site-wrapper container">
+<div className="site-wrapper container">
 
-<div class="mySlider row">
-<div class="mySlider__item col-lg-6 col-md-6">
-<div class="card">
-<div class="box">
+<div className="mySlider row">
+<div className="mySlider__item col-lg-6 col-md-6">
+<div className="card">
+<div className="box">
 <span><img src="/assets/images/an-opportunity-to-get-an-additional-certificate-from-the-harris-school-of-public-policy-and-a-scholarship-to-study-there.png" alt="" title=""/></span>
 <p>An opportunity to get an additional certificate from the <strong>Harris School of Public Policy </strong> and a scholarship to study there.</p>
 </div>
 </div>
 </div>
 {/* <!-- END ITEM --> */}
-<div class="mySlider__item col-lg-6 col-md-6">
-<div class="card">
-<div class="box">
+<div className="mySlider__item col-lg-6 col-md-6">
+<div className="card">
+<div className="box">
 <span><img src="/assets/images/taught-by-experts-with-decades-of-experience-at-the-ministry-of-finance-niti-aayog-jubilant-bhartia-group-aser-centre.png" alt="" title=""/></span>
 <p>Taught by experts with decades of experience at the <strong>Ministry of Finance</strong>, <strong>Niti Aayog</strong>, Jubilant Bhartia Group, Aser Centre</p>
 </div>
 </div>
 </div>
 {/* <!-- END ITEM --> */}
-<div class="mySlider__item col-lg-6 col-md-6">
-<div class="card">
-<div class="box">
+<div className="mySlider__item col-lg-6 col-md-6">
+<div className="card">
+<div className="box">
 <span><img src="/assets/images/opportunity-to-network-and-work-with-leaders-from-consulting-corporates-governments-and-non-profits.png" alt="" title=""/></span>
 <p>Opportunity to network and work with leaders from <strong>consulting</strong>, <strong>corporates</strong>, <strong>governments</strong>, and <strong>non-profits</strong></p>
 </div>
 </div>
 </div>
 {/* <!-- END ITEM --> */}
-<div class="mySlider__item col-lg-6 col-md-6">
-<div class="card">
-<div class="box">
+<div className="mySlider__item col-lg-6 col-md-6">
+<div className="card">
+<div className="box">
 <span><img src="/assets/images/a-comprehensive-public-policy-curriculum-that-compresses-two-years-of-coursework-into-one-year.png" alt="" title=""/></span>
 <p>A comprehensive public policy curriculum that compresses two years of coursework into one year</p>
 </div>
@@ -171,12 +176,12 @@ export default function Home() {
 </div>
 
 </div>
-<div class="col-md-4">
-<div class="video">
+<div className="col-md-4">
+<div className="video">
 
 
 
-<iframe data-src="https://www.youtube.com/embed/qRlqk-bWU6Y?feature=oembed" allowfullscreen="" frameborder="0" width="500" height="281"></iframe>
+<iframe data-src="https://www.youtube.com/embed/qRlqk-bWU6Y?feature=oembed" allowFullScreen="" frameBorder="0" width="500" height="281"></iframe>
 </div>
 </div>
 </div>
@@ -359,17 +364,17 @@ export default function Home() {
 
 <button className="accordion">Law & Economics</button>
 <div className="panel">
-<p>The Law and Economics course is designed to make scholars understand the role of law in public policy for achieving social goals from an economist’s viewpoint. Through the course, the scholars will understand the normative aspects of law and economics and the interplay between legal and economic principles. The course will also cover the law's role in generating social value through market-driven transactions. The course would look at various laws from an economic perspective, such as the economics of Private Property Law, Intellectual Property Law, Contract Law, and Tort Law. Along with this, the course will also cover the economic relevance of legal compensations, punishments, and regulations.</p>
+<p>The Law and Economics course is designed to make scholars understand the role of law in public policy for achieving social goals from an economist&rsquo;s viewpoint. Through the course, the scholars will understand the normative aspects of law and economics and the interplay between legal and economic principles. The course will also cover the law&rsquo;s role in generating social value through market-driven transactions. The course would look at various laws from an economic perspective, such as the economics of Private Property Law, Intellectual Property Law, Contract Law, and Tort Law. Along with this, the course will also cover the economic relevance of legal compensations, punishments, and regulations.</p>
 </div>
 
 <button className="accordion">Management of Societies</button>
 <div className="panel">
-<p>Dive into the dynamic interplay of management, laws, and institutions in our course on the evolution of societal structures. This course starts by exploring how societies manage diverse interests through a mix of centralisation and decentralisation, which is crucial for thriving and defending against threats. We trace the historical ascent of legal systems and governance structures, from ancient kingships to modern democracies, focusing on case studies including the Maurya Empire, ancient Athens, and modern India. Leveraging game-theoretic reasoning and political philosophy, the course analyses the creation and evolution of laws and institutions based on the power dynamics of their proponents and opponents. Highlighting influential texts from Aristotle's Politics to Chanakya's Arthashastra and modern political analysis, the curriculum underscores the enduring relevance of the Great Books, providing a deep understanding of how democratic systems and institutional frameworks influence societal outcomes. This comprehensive approach fosters independent thinking and equips scholars with the analytical tools to evaluate and influence contemporary governance and policy issues.</p>
+<p>Dive into the dynamic interplay of management, laws, and institutions in our course on the evolution of societal structures. This course starts by exploring how societies manage diverse interests through a mix of centralisation and decentralisation, which is crucial for thriving and defending against threats. We trace the historical ascent of legal systems and governance structures, from ancient kingships to modern democracies, focusing on case studies including the Maurya Empire, ancient Athens, and modern India. Leveraging game-theoretic reasoning and political philosophy, the course analyses the creation and evolution of laws and institutions based on the power dynamics of their proponents and opponents. Highlighting influential texts from Aristotle&rsquo;s Politics to Chanakya&rsquo;s Arthashastra and modern political analysis, the curriculum underscores the enduring relevance of the Great Books, providing a deep understanding of how democratic systems and institutional frameworks influence societal outcomes. This comprehensive approach fosters independent thinking and equips scholars with the analytical tools to evaluate and influence contemporary governance and policy issues.</p>
 </div>
 
 <button className="accordion">Markets for Development</button>
 <div className="panel">
-<p>This course delves into the dynamics of policy tools focusing on "Samaaj, Sarkaar, and Bazaar" (Society, Government, and Market), where we explore the advantages and limitations of each. This course critically examines the common reliance on markets to address societal problems and the frequent occurrences of market failures. When markets falter, the typical shift is towards societal or governmental interventions. This course will teach you how these failures can be reinterpreted and markets redesigned to better fulfil their potential, particularly in serving marginalised communities and regions. We will investigate the "Markets for the Poor" (M4P) approach, demonstrating how markets can enhance or replace government services (M4G), sustainable management of natural resources (M4N), address market failures (M4F), and operate in traditionally non-market areas like organ transplants (M4U). Prepare to challenge conventional perspectives on markets, exploring concepts of missing, failing, undefendable, and empowering markets, and designing effective market-based solutions using the M4PUFNG approach (Markets for the Poor, Undefendables, (market) Failures, Natural Resources, and Government Goods and Services). This course promises to introduce radical ideas that will both shock and enlighten.</p>
+<p>This course delves into the dynamics of policy tools focusing on &rdquo;Samaaj, Sarkaar, and Bazaar&rdquo; (Society, Government, and Market), where we explore the advantages and limitations of each. This course critically examines the common reliance on markets to address societal problems and the frequent occurrences of market failures. When markets falter, the typical shift is towards societal or governmental interventions. This course will teach you how these failures can be reinterpreted and markets redesigned to better fulfil their potential, particularly in serving marginalised communities and regions. We will investigate the &rdquo;Markets for the Poor&rdquo; (M4P) approach, demonstrating how markets can enhance or replace government services (M4G), sustainable management of natural resources (M4N), address market failures (M4F), and operate in traditionally non-market areas like organ transplants (M4U). Prepare to challenge conventional perspectives on markets, exploring concepts of missing, failing, undefendable, and empowering markets, and designing effective market-based solutions using the M4PUFNG approach (Markets for the Poor, Undefendables, (market) Failures, Natural Resources, and Government Goods and Services). This course promises to introduce radical ideas that will both shock and enlighten.</p>
 </div>
 
 <button className="accordion">Politics of Public Policy</button>
@@ -403,7 +408,7 @@ export default function Home() {
 
 <button className="accordion">Monitoring and Evaluation</button>
 <div className="panel">
-<p>Explore the fundamentals of Monitoring and Evaluation (M&E) in this mini-course, which is designed to enhance understanding of its role in complex development and policy-making environments. This course introduces participants to the entire M&E planning cycle, starting from the basics of monitoring and evaluation, their differences, and their significance in policy implementation, illustrated through case studies like Swachh Bharat Abhiyan and the Bangladesh Second Urban Primary Health Care Project. Dive into the Theory of Change, Logical Framework, and SMART indicators, learning how to create robust M&E frameworks using government tools like India's Output-Outcome Monitoring Framework (OOMF). The course also covers advanced topics in data analysis, visualisation, and the use of the Data Governance and Quality Index, equipping students with practical skills in handling and interpreting data for insightful M&E. Sessions on evaluation delve into various methods—qualitative, quantitative, and mixed-methods—and introduce essential concepts such as sampling, questionnaire development, and error types. Through hands-on exercises, participants will apply their learning to evaluate real-world programmes, gaining a deep, actionable understanding of M&E's pivotal role in effective governance and policy outcomes.</p>
+<p>Explore the fundamentals of Monitoring and Evaluation (M&E) in this mini-course, which is designed to enhance understanding of its role in complex development and policy-making environments. This course introduces participants to the entire M&E planning cycle, starting from the basics of monitoring and evaluation, their differences, and their significance in policy implementation, illustrated through case studies like Swachh Bharat Abhiyan and the Bangladesh Second Urban Primary Health Care Project. Dive into the Theory of Change, Logical Framework, and SMART indicators, learning how to create robust M&E frameworks using government tools like India&rsquo;s Output-Outcome Monitoring Framework (OOMF). The course also covers advanced topics in data analysis, visualisation, and the use of the Data Governance and Quality Index, equipping students with practical skills in handling and interpreting data for insightful M&E. Sessions on evaluation delve into various methods—qualitative, quantitative, and mixed-methods—and introduce essential concepts such as sampling, questionnaire development, and error types. Through hands-on exercises, participants will apply their learning to evaluate real-world programmes, gaining a deep, actionable understanding of M&E&rsquo;s pivotal role in effective governance and policy outcomes.</p>
 </div>
 
 <button className="accordion">International Trade and Finance</button>
@@ -413,7 +418,7 @@ export default function Home() {
 
 <button className="accordion">Voting and Democracy</button>
 <div className="panel">
-<p>This course introduces the complexities of democratic processes and its implications for democracy. It explores how democratic outcomes are shaped not only by voter preferences but also by the voting systems used, challenging the notion that democracy operates solely by the people's will. We examine scenarios where traditional majority rules fail to produce consistent results with more than two options, as Arrow's theorem states that no voting system is perfect. The course also considers the practical applications of voting in power distribution, checks and balances, and information aggregation, as seen in various global and local contexts, such as the European Union and jury decisions. Delve into the debate between liberalism and populism, guided by thinkers like James Madison and Rousseau, and explore how different interpretations affect the perceived legitimacy of electoral outcomes. We discuss how decision-making rules, strategic voting, and agenda control affect public policies and laws through a thorough analysis of electoral systems like plurality and proportional representation, as seen in the UK's electoral outcomes. This course extends foundational concepts like Condorcet's winner and Arrow’s theorem to current debates on governance and public policy, offering a critical perspective on the democratic system’s ability to reflect the people's true will and its societal implications.</p>
+<p>This course introduces the complexities of democratic processes and its implications for democracy. It explores how democratic outcomes are shaped not only by voter preferences but also by the voting systems used, challenging the notion that democracy operates solely by the people&rsquo;s will. We examine scenarios where traditional majority rules fail to produce consistent results with more than two options, as Arrow&rsquo;s theorem states that no voting system is perfect. The course also considers the practical applications of voting in power distribution, checks and balances, and information aggregation, as seen in various global and local contexts, such as the European Union and jury decisions. Delve into the debate between liberalism and populism, guided by thinkers like James Madison and Rousseau, and explore how different interpretations affect the perceived legitimacy of electoral outcomes. We discuss how decision-making rules, strategic voting, and agenda control affect public policies and laws through a thorough analysis of electoral systems like plurality and proportional representation, as seen in the UK&rsquo;s electoral outcomes. This course extends foundational concepts like Condorcet&rsquo;s winner and Arrow’s theorem to current debates on governance and public policy, offering a critical perspective on the democratic system’s ability to reflect the people&rsquo;s true will and its societal implications.</p>
 </div>
 
 </div>
@@ -425,7 +430,7 @@ export default function Home() {
 <div className="panel-main">
 <button className="accordion">Antarang Leadership Lab</button>
 <div className="panel">
-<p>The Antarang Leadership Lab (ALL) offers an immersive, experiential learning environment designed to cultivate intimate and impactful leadership skills among scholars. Named 'Antarang' for 'intimate,' the lab creates a nurturing space for personal development through hands-on experiences and meaningful conversations. ALL workshops begin with self-awareness exercises, progressing through diverse topics such as networking, handling cultural diversity, teamwork, effective presentations, defining success, and building resilience, culminating in a three-day leadership retreat in the hills. Additionally, the lab organises scholars into small, informal squads led by a Squad Facilitator, fostering close academic and non-academic exchanges. Each scholar also benefits from the guidance of a mentor—senior professionals from various sectors—who act as sounding boards for personal and career development throughout the year. This comprehensive approach ensures that scholars are well-prepared to lead confidently during their time at ISPP and in their future professional environments.</p>
+<p>The Antarang Leadership Lab (ALL) offers an immersive, experiential learning environment designed to cultivate intimate and impactful leadership skills among scholars. Named &rsquo;Antarang&rsquo; for &rsquo;intimate,&rsquo; the lab creates a nurturing space for personal development through hands-on experiences and meaningful conversations. ALL workshops begin with self-awareness exercises, progressing through diverse topics such as networking, handling cultural diversity, teamwork, effective presentations, defining success, and building resilience, culminating in a three-day leadership retreat in the hills. Additionally, the lab organises scholars into small, informal squads led by a Squad Facilitator, fostering close academic and non-academic exchanges. Each scholar also benefits from the guidance of a mentor—senior professionals from various sectors—who act as sounding boards for personal and career development throughout the year. This comprehensive approach ensures that scholars are well-prepared to lead confidently during their time at ISPP and in their future professional environments.</p>
 </div>
 
 <button className="accordion">Policy Case Consulting Workshop</button>
@@ -440,12 +445,12 @@ export default function Home() {
 
 <button className="accordion">Quant Lab</button>
 <div className="panel">
-<p>The Quant Lab is a pivotal component designed to enhance scholars' proficiency in handling and interpreting data, crucial for addressing public policy challenges. Focused on empowering scholars with advanced data-handling tools in Excel, the lab covers comprehensive data analysis and visualisation aspects. Participants will learn the intricacies of cleaning data, presenting it effectively, managing qualitative and quantitative variables, creating samples, testing hypotheses, and conducting regression analyses. Through practical exercises and guided learning, the lab ensures that scholars are equipped to translate raw data into actionable insights, fostering a deep understanding of data's role in developing effective public policy solutions.</p>
+<p>The Quant Lab is a pivotal component designed to enhance scholars&rsquo; proficiency in handling and interpreting data, crucial for addressing public policy challenges. Focused on empowering scholars with advanced data-handling tools in Excel, the lab covers comprehensive data analysis and visualisation aspects. Participants will learn the intricacies of cleaning data, presenting it effectively, managing qualitative and quantitative variables, creating samples, testing hypotheses, and conducting regression analyses. Through practical exercises and guided learning, the lab ensures that scholars are equipped to translate raw data into actionable insights, fostering a deep understanding of data&rsquo;s role in developing effective public policy solutions.</p>
 </div>
 
 <button className="accordion">Writing and Communication Lab</button>
 <div className="panel">
-<p>The Writing and Communication Lab at ISPP is designed to refine scholars' abilities to engage public policy stakeholders effectively. It provides apprentice-style training that enhances verbal, non-verbal, and written communication skills, tailored for use in development, corporate, and academic settings. The lab offers a robust curriculum that includes public policy communication, academic writing, and business communication. Through regular lectures and personalised one-on-one sessions, the lab improves essential communication skills and collaborates closely with the Careers team to support scholars' professional development. This integrated approach ensures that scholars are well-prepared to navigate the complex policy landscape, conduct research, transform scientific writing to suit various stakeholder needs, and advance their careers effectively.</p>
+<p>The Writing and Communication Lab at ISPP is designed to refine scholars&rsquo; abilities to engage public policy stakeholders effectively. It provides apprentice-style training that enhances verbal, non-verbal, and written communication skills, tailored for use in development, corporate, and academic settings. The lab offers a robust curriculum that includes public policy communication, academic writing, and business communication. Through regular lectures and personalised one-on-one sessions, the lab improves essential communication skills and collaborates closely with the Careers team to support scholars&rsquo; professional development. This integrated approach ensures that scholars are well-prepared to navigate the complex policy landscape, conduct research, transform scientific writing to suit various stakeholder needs, and advance their careers effectively.</p>
 </div>
 
 </div>
@@ -458,7 +463,7 @@ export default function Home() {
 
 <button className="accordion">Education</button>
 <div className="panel">
-<p>The Education Domain at ISPP is strategically designed to deepen scholars' understanding of the educational sector's challenges through a socioeconomic perspective. This domain aims to empower scholars to formulate thoughtful policies by considering the intricate complexities and real-world difficulties faced in education. The curriculum specifically focuses on themes that resonate with scholars interested in this domain, covering critical issues such as the financing of education (private vs. public funding), the role of technology in enhancing educational delivery, the unique challenges faced by the poor and other marginalised groups, and the intersections of education with employment and skill development. This targeted approach ensures that scholars are well-prepared to effectively address and influence educational policies, considering both broad societal impacts and specific stakeholder needs.</p>
+<p>The Education Domain at ISPP is strategically designed to deepen scholars&rsquo; understanding of the educational sector&rsquo;s challenges through a socioeconomic perspective. This domain aims to empower scholars to formulate thoughtful policies by considering the intricate complexities and real-world difficulties faced in education. The curriculum specifically focuses on themes that resonate with scholars interested in this domain, covering critical issues such as the financing of education (private vs. public funding), the role of technology in enhancing educational delivery, the unique challenges faced by the poor and other marginalised groups, and the intersections of education with employment and skill development. This targeted approach ensures that scholars are well-prepared to effectively address and influence educational policies, considering both broad societal impacts and specific stakeholder needs.</p>
 </div>
 
 <button className="accordion">Environment</button>
@@ -468,12 +473,12 @@ export default function Home() {
 
 <button className="accordion">Food Security and Rural Development</button>
 <div className="panel">
-<p>The Food Security and Rural Development domain at ISPP equips students with a deep understanding of contemporary food system issues within the Indian public policy context, emphasising sustainable practices to ensure food security. The course examines how public policy addresses food-related challenges, defining concerns and crafting solutions tailored to the Indian rural development debate. It explores the interconnections between sustainable food systems and food security, focusing on major policy challenges like hunger, poverty, malnutrition, and health. Students will analyse both need-based food sufficiency and rights-based food security approaches. Furthermore, the course tackles the complex relationship between food systems and climate change, discussing the role of food systems as both contributors to and victims of climate change. It reviews various models corporations and community organisations employ to manage these challenges, alongside government policies and programmes. The course includes practical learning experiences through case studies like 'Hivre Bazaar' and simulation games like 'Naranpur Express', allowing scholars to engage in immersive rural decision-making scenarios.</p>
+<p>The Food Security and Rural Development domain at ISPP equips students with a deep understanding of contemporary food system issues within the Indian public policy context, emphasising sustainable practices to ensure food security. The course examines how public policy addresses food-related challenges, defining concerns and crafting solutions tailored to the Indian rural development debate. It explores the interconnections between sustainable food systems and food security, focusing on major policy challenges like hunger, poverty, malnutrition, and health. Students will analyse both need-based food sufficiency and rights-based food security approaches. Furthermore, the course tackles the complex relationship between food systems and climate change, discussing the role of food systems as both contributors to and victims of climate change. It reviews various models corporations and community organisations employ to manage these challenges, alongside government policies and programmes. The course includes practical learning experiences through case studies like &rsquo;Hivre Bazaar&rsquo; and simulation games like &rsquo;Naranpur Express&rsquo;, allowing scholars to engage in immersive rural decision-making scenarios.</p>
 </div>
 
 <button className="accordion">Health</button>
 <div className="panel">
-<p>The Health domain covers various crucial topics to understand and address health issues through policy frameworks. Initially, discussions focus on health's importance in public policy, assess India's current health status, and explore Universal Health Coverage. Later sessions will delve into the Social Determinants of Health, the impact of the Environment on Health, and Public Policy concerning Tobacco and Alcohol. Future topics will broaden the scope to include Pharmaceutical Policy, Digital Technologies for Health, and strategies for managing Infectious and Non-Communicable Diseases, including Mental Health. Additionally, the course will examine policies related to Nutrition, Reproductive, Maternal, Neonatal, Child, and Adolescent Health, and scrutinise the Governance and Regulation of Health Services across various levels of care. Special attention will be given to the Health of Vulnerable Populations, ensuring a comprehensive understanding of how public policy can enhance health outcomes across diverse demographics.</p>
+<p>The Health domain covers various crucial topics to understand and address health issues through policy frameworks. Initially, discussions focus on health&rsquo;s importance in public policy, assess India&rsquo;s current health status, and explore Universal Health Coverage. Later sessions will delve into the Social Determinants of Health, the impact of the Environment on Health, and Public Policy concerning Tobacco and Alcohol. Future topics will broaden the scope to include Pharmaceutical Policy, Digital Technologies for Health, and strategies for managing Infectious and Non-Communicable Diseases, including Mental Health. Additionally, the course will examine policies related to Nutrition, Reproductive, Maternal, Neonatal, Child, and Adolescent Health, and scrutinise the Governance and Regulation of Health Services across various levels of care. Special attention will be given to the Health of Vulnerable Populations, ensuring a comprehensive understanding of how public policy can enhance health outcomes across diverse demographics.</p>
 </div>
 
 <button className="accordion">Infrastructure</button>
@@ -548,31 +553,31 @@ export default function Home() {
 <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" />
 <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" rel="stylesheet" />
 
-<section class="slider-section" id="faculty">
-<div class="content">
-<div class="container">
-<h2 class="title"><strong>Faculty</strong></h2>
+<section className="slider-section" id="faculty">
+<div className="content">
+<div className="container">
+<h2 className="title"><strong>Faculty</strong></h2>
 
-<div class="slider multiple-items">
+<div className="slider multiple-items">
 <div>
-<div class="faculty-mentors"><img src="/assets/images/shubhashis-gangopadhyay.jpg" alt="" title=""/>
+<div className="faculty-mentors"><img src="/assets/images/shubhashis-gangopadhyay.jpg" alt="" title=""/>
 <h3><strong>Shubhashis Gangopadhyay</strong></h3>
-<p class="faculty-mentors-content">Founding Dean of Indian School of Public Policy</p>
+<p className="faculty-mentors-content">Founding Dean of Indian School of Public Policy</p>
 </div>
 </div>
 
 <div>
-<div class="faculty-mentors"><img src="/assets/images/krishna-k-ladha.jpg" alt="" title=""/>
+<div className="faculty-mentors"><img src="/assets/images/krishna-k-ladha.jpg" alt="" title=""/>
 <h3><strong>Krishna K Ladha</strong></h3>
-<p class="faculty-mentors-content">Professor at ISPP, Distinguished<br/> 
+<p className="faculty-mentors-content">Professor at ISPP, Distinguished<br/> 
 Fellow at India Development Foundation</p>
 </div>
 </div>
 
 <div>
-<div class="faculty-mentors"><img src="/assets/images/o-p-agarwal.jpg" alt="" title=""/>
+<div className="faculty-mentors"><img src="/assets/images/o-p-agarwal.jpg" alt="" title=""/>
 <h3><strong>Dr O.P Agarwal</strong></h3>
-<p class="faculty-mentors-content">Professor of Practice, ISPP<br/>
+<p className="faculty-mentors-content">Professor of Practice, ISPP<br/>
 Former Joint Secretary<br/>
 (Urban Transport), Union Ministry of<br/> 
 Urban Development</p>
@@ -580,23 +585,23 @@ Urban Development</p>
 </div>
 
 <div>
-<div class="faculty-mentors"><img src="/assets/images/archana-gulati.jpg" alt="" title=""/>
+<div className="faculty-mentors"><img src="/assets/images/archana-gulati.jpg" alt="" title=""/>
 <h3><strong>Archana Gulati</strong></h3>
-<p class="faculty-mentors-content">Former Head of Public Policy, Google India</p>
+<p className="faculty-mentors-content">Former Head of Public Policy, Google India</p>
 </div>
 </div>
 
 <div>
-<div class="faculty-mentors"><img src="/assets/images/nandita-banerjee.jpg" alt="" title=""/>
+<div className="faculty-mentors"><img src="/assets/images/nandita-banerjee.jpg" alt="" title=""/>
 <h3><strong>Nandita Banerjee</strong></h3>
-<p class="faculty-mentors-content">Head HR & Capacity Building at ASER Centre, Pratham Education Foundation</p>
+<p className="faculty-mentors-content">Head HR & Capacity Building at ASER Centre, Pratham Education Foundation</p>
 </div>
 </div>
 
 <div>
-<div class="faculty-mentors"><img src="/assets/images/kanu-priya-sekhri.jpg" alt="" title=""/>
+<div className="faculty-mentors"><img src="/assets/images/kanu-priya-sekhri.jpg" alt="" title=""/>
 <h3><strong>Kanu Priya Sekhri</strong></h3>
-<p class="faculty-mentors-content">Business and Mindset Coach, Live Your Message</p>
+<p className="faculty-mentors-content">Business and Mindset Coach, Live Your Message</p>
 </div>
 </div>
 
@@ -605,27 +610,27 @@ Urban Development</p>
 </div>
 </section>
 
-<section class="scholar-placement-section" id="placements">
-<div class="container">
-<div class="row">
-<div class="col-md-6">
+<section className="scholar-placement-section" id="placements">
+<div className="container">
+<div className="row">
+<div className="col-md-6">
 
-<div class="site-wrapper container">
+<div className="site-wrapper container">
 
-<div class="row mySlider1">
-<div class="mySlider__item col-lg-12 col-md-12 program-overview-new">
-<div class="card">
-<h2 class="title"><strong>Placement Sector Batches Wise</strong></h2>
-<div class="scholar-placement">
+<div className="row mySlider1">
+<div className="mySlider__item col-lg-12 col-md-12 program-overview-new">
+<div className="card">
+<h2 className="title"><strong>Placement Sector Batches Wise</strong></h2>
+<div className="scholar-placement">
 <img src="/assets/images/placement-sector-batches-wise.jpg" alt="" title=""/>
 </div>
 </div>
 </div>
 
-<div class="mySlider__item col-lg-12 col-md-12 program-overview-new">
-<div class="card">
-<h2 class="title"><strong>Placement Trends 2023</strong></h2>
-<div class="scholar-placement">
+<div className="mySlider__item col-lg-12 col-md-12 program-overview-new">
+<div className="card">
+<h2 className="title"><strong>Placement Trends 2023</strong></h2>
+<div className="scholar-placement">
 <img src="/assets/images/placement-trends-2023.jpg" alt="" title=""/>
 </div>
 </div>
@@ -635,35 +640,35 @@ Urban Development</p>
 </div>
 
 {/* <!--<h3>Placement Trends 2023</h3>
-<div class="scholar-placement">
-<div class="scholar-placement-new scholar-placement-new1">
+<div className="scholar-placement">
+<div className="scholar-placement-new scholar-placement-new1">
 <p>Placement</p>
-<p>Class of 2023</p>
-<p class="scholar-placement-content">All Batches</p>
+<p>className of 2023</p>
+<p className="scholar-placement-content">All Batches</p>
 </div>
-<div class="scholar-placement-new">
+<div className="scholar-placement-new">
 <p>Samaaj</p>
 <p><span>16.7%</span></p>
-<p class="scholar-placement-content"><span>29.6%</span></p>
+<p className="scholar-placement-content"><span>29.6%</span></p>
 </div>
-<div class="scholar-placement-new">
+<div className="scholar-placement-new">
 <p>Sarkaar</p>
 <p><span>20.8%</span></p>
-<p class="scholar-placement-content"><span>9.6%</span></p>
+<p className="scholar-placement-content"><span>9.6%</span></p>
 </div>
-<div class="scholar-placement-new scholar-placement-last">
+<div className="scholar-placement-new scholar-placement-last">
 <p>Bazaar</p>
 <p><span>62.5%</span></p>
-<p class="scholar-placement-content"><span>60.8%</span></p>
+<p className="scholar-placement-content"><span>60.8%</span></p>
 </div>
 </div>--> */}
 
 </div>
 
-<div class="col-md-6 recruiters-network">
-<h2 class="title"><strong>Recruiters Network</strong></h2>
+<div className="col-md-6 recruiters-network">
+<h2 className="title"><strong>Recruiters Network</strong></h2>
 <img src="/assets/images/recruiters-network.png" alt="" title=""/>
-<div class="button">
+<div className="button">
 <strong>+ More</strong>
 </div>
 </div>
@@ -771,7 +776,7 @@ Urban Development</p>
 </div>
 <div className="col-md-4">
 <div className="video video-new">
-<video controls width="500" height="281" playsinline>
+<video controls width="500" height="281" playsInline>
   <source src="https://apply.ispp.org.in/why-study-public-policy.mp4" type="video/mp4"/>
   Your browser does not support the video tag.
 </video>
