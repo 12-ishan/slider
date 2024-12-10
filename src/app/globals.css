@@ -1,42 +1,95 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.accordion-main {
+  background: #ffffff !important;
+  font-family: "Raleway", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: bolder !important;
+	pointer-events: none; 
+    cursor: default !important;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+button.accordion-main::after {
+  display: none !important;
+}
+.panel-main {
+  display: block;
+}
+.curriculum1 .panel-main{ padding-bottom: 0;}
+			
+			
+.accordion-cus {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 600;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  border-radius: 5px;
+  position: relative;
+  background-color: #f8f8f8;
+  margin:30px 0px 25px 0px;
+  display: block;
+ /* line-height: 1.2;*/
+}
+.accordion-cus:hover {
+  background-color: #f8f8f8;
+}
+button.accordion-cus::after {
+  width: 30px;
+  height: 30px;
+  float: right;
+  font-size: 20px;
+  color: #000;
+  content: '\002B';
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  top: 17px;
+  right: 15px;
+  border-radius: 50px;
+  background: #fff;
+  margin-left: 5px;
+}
+button.accordion-cus.active::after {
+  content: "\2212";
+}			
+@media (max-width: 576px) {
+  .accordion-main {
+    color: #fff;
+    background: #3169b2 !important;
+	  cursor: pointer !important;
+	  pointer-events: auto;
   }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+	.accordion-cus{ padding: 18px 40px 18px 18px;
+    margin: 0px 0px 10px 0px;}
+  button.accordion-main::after {
+    display: block !important;
   }
+  .panel-main {
+    display: none;
+  }
+	.curriculum{border: none; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;}
+	.curriculum::before, .curriculum1::after{ display: none;}
+	button.accordion-main.active-main::after {
+  content: "\2212";
+}
+
+button.accordion-main::after {
+  width: 30px;
+  height: 30px;
+  float: right;
+  font-size: 20px;
+  color: #000;
+  content: '\002B';
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  top: 17px;
+  right: 15px;
+  border-radius: 50px;
+  background: #fff;
+  margin-left: 5px;
+}
 }

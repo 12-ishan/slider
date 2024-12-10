@@ -1,0 +1,1629 @@
+body {
+	font-family: "Raleway", sans-serif;
+	font-size: 14px;
+	color: #666;
+	font-weight: 300;
+	line-height: 26px;
+}
+.row:after, .row:before {
+	clear: both;
+	content: "";
+	display: table;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+	display: block;
+	color: #545454;
+	font-weight: normal;
+	line-height: normal;
+	margin-bottom: 15px;
+}
+h1 {
+	font-size: 60px;
+}
+h2 {
+	font-size: 58px;
+}
+h3 {
+	font-size: 42px;
+}
+h4 {
+	font-size: 34px;
+}
+h5 {
+	font-size: 24px;
+}
+h6 {
+	font-size: 18px;
+}
+.pull_left {
+	float: left;
+}
+.pull_right {
+	float: right !important;
+}
+.alignleft {
+	float: left;
+	margin-right: 16px;
+}
+.alignright {
+	float: right;
+	margin-left: 16px;
+}
+.aligncenter {
+	display: block;
+	margin: 0 auto;
+}
+.text_left {
+	text-align: left;
+}
+.text_right {
+	text-align: right;
+}
+p {
+	font-family: "Raleway", sans-serif;
+	font-size: 16px;
+	color: #000;
+	line-height: 30px !important;
+	padding-bottom: 15px;
+}
+.top-strip-section {
+  width: 100%;
+  display: block;
+  background: #000;
+  text-align: center;
+  padding: 0px 10px 0px 10px;
+}
+.top-strip-section p {
+  font-size: 18px;
+  color: #fbdf6e;
+  text-transform: uppercase;
+  padding: 20px 0px 20px 0px;
+  margin: 0px 0px 0px 0px;
+}
+.top-strip-section p a {
+  color: #fbdf6e;
+  text-decoration: none;
+}
+nav {
+  float: right;
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav a {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  color: #000 !important;
+  font-weight: 700;
+  text-decoration: none;
+}
+nav a:active,
+nav a:visited {
+  color: #fefefe;
+}
+nav .nav-logo {
+  margin: 0 1em;
+  line-height: 40px;
+  min-width: 40px;
+  text-align: center;
+}
+nav .nav-logo:hover {
+  cursor: pointer;
+  background-color: #fefefe;
+}
+nav .nav-logo:hover a {
+  color: #1d1428;
+}
+nav .nav-menu {
+  display: flex;
+  padding: 10px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+nav .nav-menu > li {
+  margin: 0 1em;
+  min-width: 40px;
+  text-align: center;
+  line-height: 40px;
+  list-style: none;
+}
+nav .nav-menu > li:hover {
+  cursor: pointer;
+}
+nav .nav-menu > li:hover a {
+  color: #1d1428;
+}
+nav .nav-container {
+  margin-top: 3px;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 40px;
+}
+nav .nav-container .nav-button {
+  background-color: #fefefe;
+  border-radius: 1px;
+  display: block;
+  height: 3px;
+  position: absolute;
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  width: 25px;
+}
+nav .nav-container .nav-button::before,
+nav .nav-container .nav-button::after {
+  background-color: #fefefe;
+  content: '';
+  border-radius: 1px;
+  display: block;
+  height: 3px;
+  position: absolute;
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  width: 25px;
+}
+nav .nav-container .nav-button::before {
+  margin-top: -8px;
+}
+nav .nav-container .nav-button::after {
+  margin-top: 8px;
+}
+nav .nav-tooggle {
+  display: none;
+}
+nav .nav-tooggle:checked + .nav-container .nav-button::before {
+  margin-top: 0;
+  transform: rotate(405deg);
+}
+nav .nav-tooggle:checked + .nav-container .nav-button::after {
+  margin-top: 0;
+  transform: rotate(-405deg);
+}
+nav .nav-tooggle:checked + .nav-container .nav-button {
+  background: rgba(255, 255, 255, 0);
+}
+.menu-section img {
+  width: 130px;
+}
+.menu-section {
+  width: 100%;
+  display: block;
+  padding: 30px 0px 30px 0px;
+}
+.menu-last a {
+  color: #fff !important;
+  background: #3169b2;
+  display: block;
+  padding: 1px 20px 5px 20px;
+  border-radius: 5px;
+}
+.menu-last a:hover {
+  color: #fff !important;
+}
+.banner-section {
+  width: 100%;
+  display: block;
+  position: relative;
+  background: #3169b2;
+}
+.banner-content {
+  width: 40% !important;
+  position: absolute;
+  top: 130px;
+}
+.banner-content h1 {
+  font-size: 27px;
+  color: #fbdf6e;
+}
+.banner-content h2 {
+  font-size: 33px;
+  color: #fff;
+  margin: 20px 0px 20px 0px;
+}
+.banner-content p {
+  color: #fff;
+}
+.banner-content a {
+  color: #fff;
+  background: #3169b2;
+  padding: 5px 20px 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.banner-content img {
+  width: 70px;
+  height: inherit;
+  margin: 0px 0px 0px 20px;
+}
+.year-section {
+  width: 100%;
+  display: block;
+  background: #f6f6f6;
+  padding: 20px 0px 20px 0px;
+}
+.year-section img {
+  width: 80px;
+  float: left;
+}
+.year-section p {
+  font-size: 18px;
+  padding: 0px 0px 0px 100px;
+  margin: 10px 0px 0px 0px;
+}
+.year-section .col-md-4 {
+  border-right: 1px solid #000;
+  padding: 0px 0px 0px 110px;
+}
+.starts-on {
+  padding: 0px 0px 0px 10px !important;
+}
+.format {
+  border-right: 0px !important;
+}
+.new-section {
+  width: 100%;
+  display: block;
+  margin: 55px 0px 55px 0px;
+}
+.title {
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  margin: 0px 0px 20px 0px;
+}
+.box {
+  width: 100%;
+}
+.box img {
+  float: left;
+  margin: 0px 20px 0px 0px;
+}
+.box p {
+  width: 75%;
+  float: right;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+.video {
+  width: 100%;
+  position: relative;
+  padding-bottom: 55%;
+  overflow: hidden;
+  height: auto;
+  height: 0;
+  background-color: #000;
+  display: inline-block;
+  margin: 25px 0px 0px 0px;
+}
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.program-overview-section {
+  width: 100%;
+  display: block;
+  background: #f6f6f6;
+  padding: 55px 0px 55px 0px;
+}
+.program-overview {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  border-radius: 3px;
+  border-bottom: 10px solid #f6f6f6;
+  background: #fff;
+  padding: 20px 20px 20px 20px;
+  margin: 0px 0px 0px 0px;
+}
+.program-overview p {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+.program-overview img {
+  float: left;
+  margin: 0px 20px 0px 0px;
+}
+.program-overview-section h2 {
+  margin: 0px 0px 35px 0px;
+}
+.program-overview-content h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0px 0px 20px 0px;
+}
+.program-overview-section .col-md-8 {
+  padding: 0px 40px 0px 0px;
+}
+.program-overview-content img {
+  width: 100%;
+  margin: 30px 0px 0px 0px;
+}
+.button {
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin: 30px 0px 0px 0px !important;
+}
+.button a {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  background: #3169b2;
+  padding: 7px 20px 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.eligibility-section {
+  width: 100%;
+  display: block;
+  background-image: url(/assets/images/eligibility.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 55px 0px 15px 0px;
+}
+.eligibility-section h2 {
+  color: #fff;
+  margin: 0px 0px 35px 0px;
+}
+.eligibility p {
+  width: 83%;
+  float: right;
+  color: #fff;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+.eligibility img {
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin: 0px 20px 0px 0px;
+}
+.eligibility {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 0px 0px 40px 0px;
+}
+.curriculum-section {
+  width: 100%;
+  display: block;
+  margin: 55px 0px 55px 0px;
+}
+.accordion {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 600;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  border-radius: 5px;
+  position: relative;
+  background-color: #f8f8f8;
+  padding: 18px 40px 18px 18px;
+  margin: 0px 0px 10px 0px;
+}
+.active, .accordion:hover {
+  background-color: #f8f8f8;
+}
+.panel {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f8f8f8;
+  margin: -10px 0px 10px 0px;
+}
+button.accordion::after {
+  width: 30px;
+  height: 30px;
+  float: right;
+  font-size: 20px;
+  color: #000;
+  content: '\002B';
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  top: 17px;
+  right: 15px;
+  border-radius: 50px;
+  background: #fff;
+  margin-left: 5px;
+}
+button.accordion.active::after {
+  content: "\2212";
+}
+.curriculum {
+  width: 100%;
+  position: relative;
+  border-left: 2px solid #000;
+  padding: 0px 20px 55px 40px;
+  margin: 0px 0px -50px 0px;
+}
+.curriculum::before {
+  content: " ";
+  display: block;
+  width: 20px;
+  background-color: #000;
+  height: 20px;
+  border-radius: 50px;
+  position: absolute;
+  top: 0px;
+  left: -11px;
+}
+.curriculum h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  margin: 30px 0px 25px 0px;
+}
+.curriculum1 {
+  padding: 0px 20px 0px 40px;
+  margin: 0px 0px 0px 0px;
+}
+.curriculum1::after {
+  content: " ";
+  display: block;
+  width: 20px;
+  background-color: #000;
+  height: 20px;
+  border-radius: 50px;
+  position: absolute;
+  left: -11px;
+  bottom: 0px;
+}
+.curriculum-content {
+  width: 100%;
+  position: sticky;
+  top: 30px;
+  border-radius: 5px;
+  background: #f8f8f8;
+  padding: 20px 20px 40px 20px;
+}
+.curriculum-content h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  line-height: 33px;
+  margin: 0px 0px 25px 0px;
+}
+.curriculum-content-new {
+  color: #006898;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+.curriculum-content-new img {
+  width: 50px;
+  margin: 0px 10px 0px 0px;
+}
+.admission-process {
+  width: 100%;
+  position: relative;
+  border-left: 2px dashed #000;
+  padding: 0px 10px 0px 40px;
+  margin: 30px 0px 0px 24px;
+}
+.admission-process img {
+  width: 50px;
+  position: absolute;
+  top: -10px;
+  left: -25px;
+}
+.admission-process p {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 15px 0px;
+}
+.admission-process::after {
+  content: " ";
+  display: block;
+  width: 10px;
+  background-color: #000;
+  height: 10px;
+  border-radius: 50px;
+  position: absolute;
+  left: -6px;
+  bottom: 8px;
+}
+.admission-process-new {
+  padding: 15px 0px 0px 40px;
+  margin: -15px 0px 0px 24px;
+}
+.admission-process-content {
+  padding: 5px 0px 0px 0px !important;
+}
+.admission-process-last {
+  margin: -15px 0px -67px 24px;
+}
+.admission-process-last::after {
+  display: none;
+}
+.selection::after {
+  bottom: 40px;
+}
+.admission-offer::after {
+  display: none;
+}
+.button-new {
+  margin: 20px 0px 0px 0px !important;
+}
+.content {
+width: 100%;
+}
+.faculty-mentors {
+width: 100%;
+float: left;
+text-align: center;
+border-radius: 7px;
+border: 1px solid #000;
+background: #fff;
+padding: 30px 20px 30px 20px;
+}
+.faculty-mentors h3 {
+font-family: "Raleway", sans-serif;
+font-size: 20px;
+color: #212529;
+line-height: 25px;
+text-align: center;
+margin: 15px 0px 10px 0px;
+}
+.faculty-mentors p {
+width: 100%;
+height: inherit;
+color: #000;
+text-align: center;
+padding: 0px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
+}
+.faculty-mentors img {
+width: 130px;
+display: initial !important;
+filter: grayscale(100%);
+}
+.slick-slide {
+margin: 0px 0.3% 0px 0.3%;
+}
+.slick-prev {
+top: 42% !important;
+left: -25px;
+}
+.slick-next {
+top: 42% !important;
+right: -25px;
+}
+.slick-prev::before {
+content: '.' !important;
+font-size: 100px !important;
+color: inherit !important;
+background-image: url(/assets/images/pre-icon-1.png);
+background-repeat: no-repeat;
+background-size: 25px 45px;
+}
+.slick-next::before {
+content: '.' !important;
+font-size: 100px !important;
+color: inherit !important;
+background-image: url(/assets/images/next-icon-1.png);
+background-repeat: no-repeat;
+background-size: 25px 45px;
+}
+.faculty-mentors-content {
+height: 125px !important;
+}
+.slider-section {
+  width: 100%;
+  display: block;
+  background: #f6f6f6;
+  padding: 55px 0px 55px 0px;
+}
+.slider-section h2 {
+  margin: 0px 0px 35px 0px;
+}
+.scholar-placement-section {
+  width: 100%;
+  display: block;
+  background: #3169b2;
+  padding: 55px 0px 55px 0px;
+}
+.scholar-placement-section h2 {
+  color: #fff;
+}
+.scholar-placement-section h3 {
+  font-family: "Raleway", sans-serif;
+  color: #000;
+  display: inline-block;
+  background: #fff;
+  padding: 5px 15px 10px 15px;
+  margin: 20px 0px 20px 0px;
+}
+.scholar-placement-new {
+  width: 25%;
+  float: left;
+  border-right: 1px solid #27548e;
+  padding: 0px 0px 0px 40px;
+}
+.scholar-placement-new p {
+  color: #fff;
+  font-weight: 700;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 30px 0px;
+}
+.scholar-placement {
+  width: 100%;
+}
+.recruiters-network {
+  border-left: 1px solid #fff;
+  padding: 0px 0px 0px 55px !important;
+}
+.recruiters-network img {
+  width: 90%;
+  margin: 20px 0px 0px 0px;
+}
+.recruiters-network .button {
+  color: #fff;
+  text-align: right;
+  margin: 10px 0px 0px 0px !important;
+}
+.scholar-placement-new1 {
+  padding: 0px 0px 0px 0px;
+}
+.scholar-placement-last {
+  border-right: 0px;
+}
+.scholar-placement-new p span {
+  font-size: 22px;
+}
+.public-policy-section {
+  width: 100%;
+  display: block;
+  background: #f6f6f6;
+  padding: 55px 0px 55px 0px;
+}
+.public-policy {
+  height: 130px;
+  text-align: center;
+  box-shadow: 7px 0px;
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid #1e549a;
+  padding: 0px 20px 20px 20px;
+  margin: 70px 0px 20px 0px;
+}
+.public-policy p {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0px 0px 0px 0px;
+  margin: 20px 0px 0px 0px;
+}
+.public-policy img {
+  width: 100px;
+  margin: -50px auto 0px;
+}
+.faqs-section {
+  width: 100%;
+  display: block;
+  margin: 55px 0px 55px 0px;
+}
+.faqs .accordion {
+  color: #000;
+  position: relative;
+  background: #f8f8f8;
+  padding: 18px 40px 18px 18px;
+}
+.faqs .panel {
+  background: #fff;
+  margin: 10px 0px 0px 0px;
+}
+.faqs-section h2 {
+  margin: 0px 0px 35px 0px;
+}
+.faqs .accordion::after {
+  width: auto;
+  height: inherit;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: inherit;
+}
+.footer-section {
+  width: 100%;
+  text-align: center;
+  display: block;
+  background: #000;
+  padding: 25px 0px 35px 0px;
+}
+.footer-section h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  color: #fbdf6e;
+  text-transform: uppercase;
+}
+.footer-section p {
+  color: #fff;
+  padding: 0px 0px 0px 0px;
+  margin: 20px 0px 30px 0px;
+}
+.footer-section a {
+  font-family: "Raleway", sans-serif;
+  color: #000;
+  background: #ffe370;
+  padding: 7px 20px 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.mySlider {
+  position: relative;
+  padding-bottom: 40px;
+}
+.slick-dots {
+  display: block;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  margin: 0;
+  bottom: 10px;
+  list-style: none;
+}
+.slick-dots li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.slick-dots li button {
+  width: 12px;
+  height: 12px;
+  border: 0;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-indent: -999999px;
+}
+.slick-dots li.slick-active button {
+  background-color: #2b9fdf;
+}
+.card {
+  float: left;
+  display: flex !important;
+  align-items: last baseline;
+  justify-content: left;
+  border: 0px !important;
+  margin: 20px 2% 20px 0px;
+}
+.mySlider__item.col-lg-6.col-md-6 {
+  padding: 0px 0px 0px 0px;
+}
+.mySlider {
+  padding: 0px 0px 0px 0px;
+}
+.program-overview-new {
+  padding: 0px 0px 0px 0px;
+}
+.program-overview-new .card {
+  margin: 0px 0px 15px 0px;
+}
+.eligibility-new .card {
+  background: inherit;
+  margin: 0px 0px 0px 0px;
+}
+.faqs {
+  position: relative;
+}
+.menu-section .button {
+  display: none;
+}
+.multiple-items1 img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+.multiple-items1 .slick-prev {
+  left: 20px;
+  z-index: 9;
+  top: 50% !important;
+}
+.multiple-items1 .slick-next {
+  right: 25px;
+  top: 50% !important;
+}
+.multiple-items1 .slick-slide {
+  margin: 0px 0% 0px 0%;
+}
+.banner-section .row {
+  margin: 0px 0px 0px 0px;
+}
+.banner-section .col-md-8 {
+  padding: 0px 0px 0px 0px;
+}
+.multiple-items1 {
+  margin: 0px 0px 0px 0px !important;
+}
+.multiple-items1 .slick-dots {
+  bottom: 25px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+.multiple-items1 .slick-dots li button {
+  background: #fff !important;
+}
+.multiple-items1 .slick-dots li.slick-active button {
+  background: #3169b2 !important;
+}
+/*.admission-process-new1::after {
+  border: 1px solid #000;
+  background: #f8f8f8;
+}*/
+.eligibility-new {
+  width: 1280px;
+}
+.eligibility-section .eligibility-new {
+  padding: 0px 10px 0px 10px !important;
+}
+.top-strip-section p sup {
+  text-transform: initial;
+}
+.program-overview-section .slick-dots li.slick-active button {
+  background: #3169b2;
+}
+.program-overview-section .slick-dots li button {
+  width: 10px;
+  height: 10px;
+  background: #000;
+}
+.program-overview-section .slick-dots {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+.program-overview-section .slick-dots li {
+  width: 10px;
+  height: 10px;
+}
+.form {
+  padding: 0px 30px 0px 30px !important;
+}
+.form h2 {
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0px 15px 0px;
+}
+.npf_wgts iframe {
+  height: 370px;
+}
+.multiple-items1 .slick-prev::before {
+  background-image: url(/assets/images/pre-icon-2.png);
+}
+.multiple-items1 .slick-next::before {
+  background-image: url(/assets/images/next-icon-2.png);
+}
+.video-new {
+  margin: 0px 0px 10px 0px;
+}
+.multiple-items2 .slick-prev {
+  top: 55% !important;
+}
+.multiple-items2 .slick-next {
+  top: 55% !important;
+}
+.faqs .panel p {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 20px 0px;
+}
+.faqs .panel ol {
+  padding: 0px 0px 0px 17px;
+  margin: 0px 0px 20px 0px;
+}
+.faqs .panel ol li {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  margin: 0px 0px 10px 0px;
+}
+.program-overview-content .program-overview {
+  display: inherit;
+  background: inherit;
+  padding: 0px 0px 0px 0px;
+}
+.program-overview-content .program-overview img {
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+}
+.program-overview-content .site-wrapper {
+  margin: 33px 0px 0px 0px;
+}
+.scholar-placement-section .card {
+  background: inherit;
+}
+.scholar-placement-section .mySlider__item {
+  margin: 0px 0% 0px 0%;
+}
+.scholar-placement img {
+  width: 100%;
+  border-radius: 10px;
+}
+.scholar-placement-section .slick-dots {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+.scholar-placement-section .slick-dots li {
+  width: 10px;
+  height: 10px;
+}
+.scholar-placement-section .slick-dots li.slick-active button {
+  width: 10px;
+  height: 10px;
+  background: #fff !important;
+}
+.scholar-placement-section .slick-dots li button {
+  width: 10px;
+  height: 10px;
+  background: #000;
+}
+.scholar-placement-section .site-wrapper {
+  padding: 0px 55px 0px 10px;
+}
+.thanks {
+  text-align: center;
+}
+.thanks img {
+  width: 170px;
+}
+.thanks h2 {
+  font-size: 32px;
+  margin: 50px 0px 20px 0px;
+}
+.thanks p {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 15px 0px;
+}
+.video-new video {
+  width: 100%;
+  height: initial;
+}
+.multiple-items1 .banner-pic {
+  display: none !important;
+}
+
+@media screen and (max-width: 1650px) {
+.multiple-items1 img {
+  height: 500px;
+}
+}
+@media screen and (max-width: 1399px) {
+.menu-section .col-md-3 {
+  width: 20%;
+}
+.menu-section .col-md-9 {
+  width: 80%;
+}
+nav .nav-menu > li {
+  margin: 0px 13px 0px 13px;
+}
+.eligibility p {
+  width: 70%;
+}
+.curriculum-content-new span {
+  width: 75%;
+  float: right;
+}
+.box p {
+  width: 70%;
+}
+.multiple-items1 img {
+  height: 459px;
+}
+}
+@media screen and (max-width: 1350px) {
+.multiple-items1 img {
+    object-fit: fill;
+}
+}
+@media screen and (max-width: 1250px) {
+.banner-section .col-md-8 {
+  width: 100%;
+}
+.form {
+  width: 100% !important;
+  padding: 10px 20px 40px 20px !important;
+}
+}
+@media screen and (max-width: 1199px) {
+.menu-section .col-md-3 {
+  width: 15%;
+}
+.menu-section .col-md-9 {
+  width: 85%;
+}
+nav .nav-menu > li {
+  margin: 0px 10px 0px 10px;
+}
+nav .nav-menu {
+  padding: 15px 0px 0px 0px;
+}
+.menu-section img {
+    width: 130px;
+}
+.box p {
+  width: 65%;
+  float: right;
+}
+.slick-prev::before {
+  background-size: 15px 25px;
+}
+.slick-next::before {
+  background-size: 15px 25px;
+}
+.slider-section .slick-dots {
+  display: none !important;
+}
+nav a {
+  font-size: 16px;
+}
+.eligibility p {
+  width: 65%;
+}
+.multiple-items2 .slick-prev {
+  top: 59% !important;
+  left: -5px;
+}
+.multiple-items2 .slick-next {
+  top: 59% !important;
+  right: -10px;
+}
+.multiple-items2 .slick-dots {
+  display: none !important;
+}
+}
+@media screen and (max-width: 994px) {
+.container-lg, .container-md, .container-sm, .container {
+    max-width: 950px;
+}
+}
+@media screen and (max-width: 991px) {
+nav .nav-container {
+    display: flex;
+    margin: 0 1em;
+}
+ nav .nav-menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+	z-index: 9;
+	overflow: hidden;
+	margin: 170px 0px 0px 0px;
+}
+nav .nav-menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #fefefe;
+	border-bottom: 1px solid #3b3a3a !important;
+    background-color: #1d1428;
+}
+nav .nav-menu > li:hover {
+    color: #1d1428;
+    bbackground: #000;
+}
+nav .nav-tooggle:checked ~ .nav-menu li {
+    height: 2.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+nav .nav-tooggle ~ .nav-menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+nav .nav-container .nav-button::before, nav .nav-container .nav-button::after {
+  background-color: #000;
+}
+nav a {
+  color: #fff !important;
+}
+.year-section .col-md-4 {
+  padding: 0px 0px 0px 30px;
+}
+.title {
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+}
+.new-section .col-md-8 {
+  width: 100%;
+}
+.new-section .col-md-4 {
+  width: 100%;
+}
+.video {
+  margin: 40px 0px 0px 0px;
+}
+.program-overview-section .col-md-8 {
+  width: 100%;
+  padding: 0px 0px 0px 0px;
+}
+.program-overview-content {
+  width: 100% !important;
+}
+.program-overview-content h2 {
+  font-size: 20px;
+  line-height: 30px;
+  padding: 0px 0px 0px 0px !important;
+  margin: 30px 0px 0px 0px;
+}
+.program-overview-content img {
+  margin: 25px 0px 0px 0px;
+}
+.program-overview-section h2 {
+  text-align: center;
+  padding: 0px 10px 0px 10px;
+}
+.eligibility-new {
+  width: 100%;
+  padding: 0px 0px 0px 0px;
+}
+.eligibility-new .card {
+  display: inherit !important;
+}
+.eligibility {
+  width: 100%;
+  float: left;
+}
+.curriculum-section .col-md-8 {
+  width: 100%;
+}
+.curriculum-section .col-md-4 {
+  width: 100%;
+  margin: 55px 0px 0px 0px;
+}
+.curriculum-content h2 {
+  font-size: 20px;
+  text-align: center;
+}
+.scholar-placement-section .col-md-6 {
+  width: 100%;
+}
+.recruiters-network {
+  border-left: 0px;
+  padding: 0px 0px 0px 0px !important;
+  margin: 50px 0px 0px 0px !important;
+}
+.scholar-placement-new p {
+  height: 50px;
+  text-align: center;
+  border-bottom: 1px solid #27548e;
+  padding: 0px 10px 15px 10px;
+  margin: 0px 0px 15px 0px;
+}
+.scholar-placement-new {
+  padding: 0px 0px 0px 0px;
+}
+.scholar-placement-content {
+  border-bottom: 0px !important;
+  margin: 0px 0px 0px 0px !important;
+}
+nav .nav-container .nav-button {
+  background-color: #000;
+}
+.menu-section {
+  padding: 20px 0px 20px 0px;
+}
+.menu-section .col-md-9 {
+    padding: 23px 0px 0px 0px;
+}
+.menu-section img {
+    width: 100px;
+}
+.menu-last {
+  display: none !important;
+}
+nav a {
+    font-size: 18px;
+}
+.menu-section .button {
+  display: inherit;
+  margin: -18px -10px 0px 0px !important;
+}
+.menu-section .button a {
+  font-size: 16px;
+  color: #fff !important;
+  background: #3169b2;
+  padding: 5px 10px 8px 10px;
+}
+.banner-section .col-md-8 {
+  width: 100%;
+}
+.eligibility p {
+  width: 80%;
+}
+.eligibility-section {
+  background-size: cover;
+}
+.eligibility-section .col-lg-4.col-md-4 {
+  width: 100%;
+}
+.curriculum-content-new span {
+  width: inherit;
+  float: none;
+}
+.box p {
+    width: 68%;
+}
+.multiple-items1 img {
+  height: inherit;
+}
+.scholar-placement-section .site-wrapper {
+  padding: 0px 10px 0px 10px;
+}
+.recruiters-network img {
+  width: 100%;
+}
+.scholar-placement-section h2 {
+  width: 97%;
+  text-align: center;
+}
+}
+@media screen and (max-width: 768px) {
+.container-md, .container-sm, .container {
+    max-width: 700px;
+}
+}
+@media screen and (max-width: 767px) {
+.year-section .col-md-4 {
+  width: 33%;
+  text-align: center;
+  display: inline-block;
+  border-right: 0px;
+  padding: 0px 0px 0px 0px;
+}
+.year-section p {
+  width: 100%;
+  float: left;
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+}
+.year-section img {
+  float: none;
+}
+.starts-on {
+  padding: 0px 0px 0px 0px !important;
+}
+.format {
+  margin: 0px auto 0px !important;
+}
+.box p {
+    width: 100%;
+    float: none;
+}
+.slick-dots li button {
+  width: 10px !important;
+  height: 10px !important;
+  background: #000 !important;
+}
+.slick-dots li.slick-active button {
+  background-color: #2f6ab0 !important;
+}
+.slick-dots {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+.slick-dots li {
+  width: 10px !important;
+  height: 10px !important;
+}
+.card {
+  margin: 20px 0% 10px 0px;
+}
+.program-overview img {
+  float: right;
+  margin: 0px 0px 0px 20px;
+}
+.program-overview-content h2 {
+    margin: 50px 0px 0px 0px;
+}
+.eligibility-section {
+  padding: 55px 0px 55px 0px;
+}
+.eligibility-section .slick-dots li.slick-active button {
+  background: #fff !important;
+}
+.scholar-placement-new p {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.public-policy-section {
+  background: #fff;
+  padding: 0px 0px 0px 0px;
+  margin: 55px 0px 0px 0px;
+}
+.public-policy-section .col-md-4 {
+  width: 33.33%;
+}
+.public-policy {
+  box-shadow: inherit;
+  background: #fff;
+  border-radius: 0px;
+  border: 0px;
+  padding: 0px 0px 0px 0px;
+}
+.public-policy p {
+  margin: 10px 0px 0px 0px;
+}
+.public-policy img {
+  width: 75px;
+}
+.program-overview {
+  display: initial;
+}
+.program-overview p {
+  width: 75%;
+  height: inherit;
+  float: left;
+}
+.scholar-placement-section .site-wrapper {
+  padding: 0px 0px 0px 10px;
+}
+.thanks p br {
+  display: none;
+}
+}
+@media screen and (max-width: 575px) {
+.slider.multiple-items {
+  width: 80%;
+  margin: 0px auto 0px;
+}
+.curriculum-section .col-md-4 {
+    padding: 0px 0px 0px 0px;
+}
+.slider-section {
+  background: #fff;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 55px 0px;
+}
+.curriculum-content {
+  padding: 55px 20px 65px 20px;
+}
+.recruiters-network {
+	background: #f6f6f6;
+    padding: 40px 10px 55px 10px !important;
+    margin: 50px 0px 0px 0px !important;
+}
+.recruiters-network h2 {
+  color: #000;
+}
+.recruiters-network img {
+  width: 100%;
+}
+.recruiters-network .button {
+  padding: 0px 10px 0px 0px;
+}
+.recruiters-network .button a {
+  color: #000;
+  background: inherit;
+  padding: 0px 0px 0px 0px;
+}
+.scholar-placement-section {
+  padding: 55px 0px 0px 0px;
+}
+.multiple-items2 {
+  width: 80%;
+  margin: 0px auto 0px;
+}
+.multiple-items2 .slick-prev {
+  top: 50% !important;
+}
+.multiple-items2 .slick-next {
+  top: 50% !important;
+}
+.multiple-items2 {
+  width: 80% !important;
+  margin: 0px auto 0px !important;
+}
+.scholar-placement {
+  padding: 0px 15px 0px 5px;
+}
+.admission-process {
+  width: 90%;
+}
+.program-overview-section .site-wrapper {
+  width: 90%;
+  margin: 0px auto 0px;
+}
+}
+@media screen and (max-width: 530px) {
+.eligibility p {
+    width: 75%;
+}
+}
+@media screen and (max-width: 501px) {
+.top-strip-section p {
+  font-size: 16px;
+}
+}
+@media screen and (max-width: 500px) {
+.top-strip-section p {
+  font-size: 11px;
+  line-height: 19px !important;
+}
+.scholar-placement-new p {
+    font-size: 14px;
+	line-height: 25px !important;
+}
+.scholar-placement-new p span {
+  font-size: 18px;
+}
+.scholar-placement-section h3 {
+  display: none;
+}
+.top-strip-section p a {
+  font-size: 11px;
+  color: #fff;
+  background: #3169b2;
+  border-radius: 5px;
+  padding: 2px 10px 3px 10px;
+  display: inline-block;
+  margin: 0px 0px 0px 10px;
+}
+.multiple-items1 .slick-dots {
+  bottom: 15px;
+}
+.box p {
+    width: 75%;
+    float: left;
+	padding: 0px 0px 0px 20px;
+}
+.box span {
+  width: 25%;
+  float: left;
+}
+.footer-section h3 {
+  font-size: 20px;
+}
+.year-section p {
+    font-size: 16px;
+}
+.year-section img {
+    width: 50px;
+}
+.curriculum {
+  padding: 0px 20px 55px 20px;
+}
+.curriculum1 {
+  padding: 0px 20px 0px 20px;
+}
+.program-overview-section {
+  background: #fff;
+  padding: 0px 0px 55px 0px;
+}
+.program-overview-section .col-md-8 {
+	background: #f6f6f6;
+    padding: 45px 0px 50px 0px;
+}
+.program-overview-content {
+    background: #fff;
+    margin: 50px 0px 0px 0px !important;
+}
+.program-overview-content h2 {
+    margin: 0px 0px 0px 0px;
+}
+.footer-section a {
+  width: 100%;
+  color: #fff;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: none;
+  border-radius: 0px;
+  background: #3169b2;
+  padding: 10px 20px 15px 20px;
+}
+.footer-section {
+  padding: 30px 0px 35px 0px;
+}
+.footer-section p {
+  margin: 20px 0px 0px 0px;
+}
+nav .nav-menu {
+	display: none;
+    margin: 155px 0px 0px 0px;
+}
+.sticky {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 9;
+  background: #fff;
+}
+.sticky + .content {
+  padding-top: 50px;
+}
+.sticky nav .nav-menu {
+  margin: 70px 0px 0px 0px;
+}
+nav .nav-container {
+    display: none;
+}
+.menu-section .button {
+	margin: -18px 0px 0px 0px !important;
+}
+.menu-section {
+    border-bottom: 1px solid #ddd;
+}
+.multiple-items1 img {
+    display: none !important;
+}
+.multiple-items1 .banner-pic {
+  display: inherit !important;
+}
+.menu-section .col-md-9 {
+    width: 50%;
+    position: absolute;
+    right: 13px;
+}
+}
+@media screen and (max-width: 489px) {
+.program-overview p {
+  width: 70%;
+}
+}
+@media screen and (max-width: 436px) {
+.top-strip-section p a {
+    margin: 5px 0px 0px 10px;
+}
+}
+@media screen and (max-width: 428px) {
+.program-overview p {
+	width: 65%;
+}
+}
+@media screen and (max-width: 422px) {
+.program-overview p {
+	width: 100%;
+}
+.program-overview img {
+    float: none;
+    margin: 0px auto 20px;
+}
+}
+@media screen and (max-width: 417px) {
+.eligibility p {
+    width: 70%;
+}
+}
+@media screen and (max-width: 400px) {
+.top-strip-section p a {
+  margin: 10px 10px 0px 10px;
+}
+.scholar-placement-section h2 {
+  font-size: 20px;
+}
+.top-strip-section p {
+    line-height: 13px !important;
+}
+}
+@media screen and (max-width: 394px) {
+.curriculum-content-new span {
+    width: 75%;
+    float: right;
+}
+}
+@media screen and (max-width: 336px) {
+.top-strip-section p {
+	line-height: 15px !important;
+    padding: 10px 0px 10px 0px;
+}
+}
