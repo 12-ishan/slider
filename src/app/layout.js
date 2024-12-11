@@ -19,12 +19,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
        
-        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'/>
+      <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'/>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
 
         <link rel="shortcut icon" href="https://apply.ispp.org.in/images/favicon.ico" type="image/x-icon"/>
 
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css'/>
+
+       
 
         <link
   rel="stylesheet"

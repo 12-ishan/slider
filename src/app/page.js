@@ -1,6 +1,12 @@
 "use client"
 import { useEffect } from "react";
 import SliderOne from './components/SliderOne';
+import SliderTwo from "./components/SliderTwo";
+import MySliderOne from "./components/MySliderOne";
+import SliderThree from "./components/SliderThree";
+import MySliderTwo from "./components/MySliderTwo";
+import MySliderThree from "./components/MySliderThree";
+import MySlider from "./components/MySlider";
 
 
 
@@ -191,15 +197,17 @@ export default function Home() {
 
 <section className="program-overview-section" id="program-overview">
 <div className="container">
-<div className="row">
+  
+ <div className="row">
 <div className="col-md-8">
 <h2 className="title"><strong>Programme Overview</strong></h2>
 <div className="site-wrapper">
-
-<div className="row mySlider1">
-<div className="mySlider__item col-lg-12 col-md-12 program-overview-new">
+<MySliderOne/>
+{/*<div className="row mySlider1">
+ 
+{/*<div className="mySlider__item col-lg-12 col-md-12 program-overview-new">
 <div className="card">
-<div className="program-overview">
+ <div className="program-overview">
 <img src="/assets/images/programme-overview-1.png" alt="" title=""/>
 <p>The programme is divided into 7 terms of 7 weeks each, with a capstone and internship report due at the end of the programme</p>
 </div>
@@ -210,7 +218,7 @@ export default function Home() {
 </div>
 </div>
 {/* <!-- END ITEM --> */}
-<div className="mySlider__item col-lg-12 col-md-12 program-overview-new">
+ {/*<div className="mySlider__item col-lg-12 col-md-12 program-overview-new">
 <div className="card">
 <div className="program-overview">
 <img src="/assets/images/programme-overview-3.png" alt="" title=""/>
@@ -224,7 +232,7 @@ export default function Home() {
 </div>
 {/* <!-- END ITEM --> */}
 
-<div className="mySlider__item col-lg-12 col-md-12 program-overview-new">
+ {/*<div className="mySlider__item col-lg-12 col-md-12 program-overview-new">
 <div className="card">
 <div className="program-overview">
 <img src="/assets/images/programme-overview-5.png" alt="" title=""/>
@@ -235,18 +243,19 @@ export default function Home() {
 <p>Dedicated career support and training with workshops and training sessions by leaders from the corporate and consulting space.</p>
 </div>
 </div>
-</div>
+</div> 
 {/* <!-- END ITEM --> */}
-</div>
+
 </div>
 </div>
 <div className="col-md-4 program-overview-content">
 <h2><strong>Scholars Journey With The Harris School</strong></h2>
 
 <div className="site-wrapper container">
-
-<div className="row mySlider1">
-<div className="mySlider__item col-lg-12 col-md-12 program-overview-new">
+<MySliderTwo/>
+{/* <div className="row mySlider1">
+  <MySliderTwo/> */}
+{/* <div className="mySlider__item col-lg-12 col-md-12 program-overview-new">
 <div className="card">
 <div className="program-overview">
 <img src="/assets/images/ispp-scholars-journey-with-the-harris-school.jpg" alt="" title=""/>
@@ -254,16 +263,16 @@ export default function Home() {
 </div>
 </div>
 {/* <!-- END ITEM --> */}
-<div className="mySlider__item col-lg-12 col-md-12 program-overview-new">
+{/* <div className="mySlider__item col-lg-12 col-md-12 program-overview-new">
 <div className="card">
 <div className="program-overview">
 <img src="/assets/images/uchicago-partnership.jpg" alt="" title=""/>
 </div>
 </div>
 </div>
-{/* <!-- END ITEM --> */}
+<!-- END ITEM --> */} 
 
-</div>
+
 </div>
 
 </div>
@@ -280,7 +289,8 @@ export default function Home() {
 
 <div className="row">
 <h2 className="title"><strong>Eligibility</strong></h2>
-<div className="site-wrapper container">
+<MySlider/>
+{/* <div className="site-wrapper container">
 
 <div className="mySlider row">
 <div className="mySlider__item col-lg-6 col-md-6 eligibility-new">
@@ -296,7 +306,7 @@ export default function Home() {
 </div>
 </div>
 {/* <!-- END ITEM --> */}
-<div className="mySlider__item col-lg-6 col-md-6 eligibility-new">
+{/*<div className="mySlider__item col-lg-6 col-md-6 eligibility-new">
 <div className="card">
 <div className="eligibility">
 <span><img src="/assets/images/icon-7.png" alt="" title=""/></span>
@@ -310,8 +320,8 @@ export default function Home() {
 </div>
 
 </div>
-</div>
-</div>
+</div>*/}
+</div> 
 </div>
 </section>
 
@@ -559,7 +569,8 @@ export default function Home() {
 <h2 className="title"><strong>Faculty</strong></h2>
 
 <div className="slider multiple-items">
-<div>
+  <SliderThree/>
+{/* <div>
 <div className="faculty-mentors"><img src="/assets/images/shubhashis-gangopadhyay.jpg" alt="" title=""/>
 <h3><strong>Shubhashis Gangopadhyay</strong></h3>
 <p className="faculty-mentors-content">Founding Dean of Indian School of Public Policy</p>
@@ -603,7 +614,7 @@ Urban Development</p>
 <h3><strong>Kanu Priya Sekhri</strong></h3>
 <p className="faculty-mentors-content">Business and Mindset Coach, Live Your Message</p>
 </div>
-</div>
+</div> */}
 
 </div>
 </div>
@@ -616,8 +627,9 @@ Urban Development</p>
 <div className="col-md-6">
 
 <div className="site-wrapper container">
+  <MySliderThree/>
 
-<div className="row mySlider1">
+{/* <div className="row mySlider1">
 <div className="mySlider__item col-lg-12 col-md-12 program-overview-new">
 <div className="card">
 <h2 className="title"><strong>Placement Sector Batches Wise</strong></h2>
@@ -634,9 +646,9 @@ Urban Development</p>
 <img src="/assets/images/placement-trends-2023.jpg" alt="" title=""/>
 </div>
 </div>
-</div>
+</div> 
 
-</div>
+</div>*/}
 </div>
 
 {/* <!--<h3>Placement Trends 2023</h3>
@@ -696,7 +708,8 @@ Urban Development</p>
 <div className="row">
 <h2 className="title"><strong>Careers in Public Policy</strong></h2>
 <div className="slider multiple-items2">
-<div>
+  <SliderTwo/>
+{/* <div>
 <div className="public-policy">
 <img src="/assets/images/government.png" alt="" title=""/>
 <p>Government</p>
@@ -750,7 +763,7 @@ Urban Development</p>
 <img src="/assets/images/consultancies.png" alt="" title=""/>
 <p>Consultancies</p>
 </div>
-</div>
+</div> */}
 
 </div>
 
