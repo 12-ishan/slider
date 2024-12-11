@@ -187,7 +187,7 @@ export default function Home() {
 
 
 
-<iframe data-src="https://www.youtube.com/embed/qRlqk-bWU6Y?feature=oembed" allowFullScreen="" frameBorder="0" width="500" height="281"></iframe>
+<iframe src="https://www.youtube.com/embed/qRlqk-bWU6Y?feature=oembed" allowFullScreen="" frameBorder="0" width="500" height="281"></iframe>
 </div>
 </div>
 </div>
