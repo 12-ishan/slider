@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
   href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
 />
       
-        {/* <script
+        <script
           dangerouslySetInnerHTML={{
             __html: `
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -89,18 +89,18 @@ export default function RootLayout({ children }) {
             })(window, document, "clarity", "script", "fdng4tho8u");
             `,
           }}
-        /> */}
+        />
       </head>
       <body>
        
-        {/* <noscript>
+        <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-WJPXHLX"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
-        </noscript> */}
+        </noscript>
 
 
         {children}

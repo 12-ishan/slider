@@ -4,20 +4,20 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const MySliderOne = () => {
-   
+    // const [isMobile, setIsMobile] = useState(false);
 
-    useEffect(() => {
+    // useEffect(() => {
      
-      const handleResize = () => {
-        setIsMobile(window.innerWidth <= 1920);
-      };
+    //   const handleResize = () => {
+    //     setIsMobile(window.innerWidth <= 1920);
+    //   };
   
-      window.addEventListener("resize", handleResize);
+    //   window.addEventListener("resize", handleResize);
   
-      return () => {
-        window.removeEventListener("resize", handleResize);
-      };
-    }, []);
+    //   return () => {
+    //     window.removeEventListener("resize", handleResize);
+    //   };
+    // }, []);
   
     const settings = {
       dots: true,

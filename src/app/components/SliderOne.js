@@ -27,23 +27,23 @@ export default function SliderOne() {
   return (
     <Slider {...settings}>
       <div>
-        <img src="/assets/images/creating-next-gen-policy-leaders-for-a-rising-india-banner.jpg" alt="" title="" />
-        <img src="/assets/images/creating-next-gen-policy-leaders-for-a-rising-india-banner-new.jpg" alt="" title="" className="banner-pic" />
+        <img src="/assets/images/creating-next-gen-policy-leaders-for-a-rising-india-banner-min.jpg" alt="" title="" />
+        <img src="/assets/images/creating-next-gen-policy-leaders-for-a-rising-india-banner-new-min.jpg" alt="" title="" className="banner-pic" />
       </div>
 
       <div>
-        <img src="/assets/images/our-uchicago-collaboration-banner.jpg" alt="" title="" />
-        <img src="/assets/images/our-uchicago-collaboration-banner-new.jpg" alt="" title="" className="banner-pic" />
+        <img src="/assets/images/our-uchicago-collaboration-banner-min.jpg" alt="" title="" />
+        <img src="/assets/images/our-uchicago-collaboration-banner-new-min.jpg" alt="" title="" className="banner-pic" />
       </div>
 
       <div>
-        <img src="/assets/images/learn-from-our-unmatched-faculty-banner.jpg" alt="" title="" />
-        <img src="/assets/images/learn-from-our-unmatched-faculty-banner-new.jpg" alt="" title="" className="banner-pic" />
+        <img src="/assets/images/learn-from-our-unmatched-faculty-banner-min.jpg" alt="" title="" />
+        <img src="/assets/images/learn-from-our-unmatched-faculty-banner-new-min.jpg" alt="" title="" className="banner-pic" />
       </div>
 
       <div>
-        <img src="/assets/images/lead-policy-change-with-our-partners-banner.jpg" alt="" title="" />
-        <img src="/assets/images/lead-policy-change-with-our-partner-banner-new.jpg" alt="" title="" className="banner-pic" />
+        <img src="/assets/images/lead-policy-change-with-our-partners-banner-min.jpg" alt="" title="" />
+        <img src="/assets/images/lead-policy-change-with-our-partner-banner-new-min.jpg" alt="" title="" className="banner-pic" />
       </div>
     </Slider>
   );
