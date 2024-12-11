@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import Image from "next/image";
 
 export default function SliderTwo() {
   var settings = {
@@ -28,59 +29,107 @@ export default function SliderTwo() {
   return (
     <Slider {...settings}>
       <div>
-      <div className="public-policy">
-      <img src="/assets/images/government.png" alt="" title=""/>
-      <p>Government</p>
-      </div>
-      </div>
-
-      <div>
-      <div className="public-policy">
-      <img src="/assets/images/ngos.png" alt="" title=""/>
-      <p>NGOs</p>
-      </div>
-      </div>
-
-      <div>
-      <div className="public-policy">
-      <img src="/assets/images/think-tanks.png" alt="" title=""/>
-      <p>Think Tanks</p>
-      </div>
+        <div className="public-policy">
+          <Image 
+            src="/assets/images/government.png" 
+            alt="Government" 
+            title="Government" 
+            width={500} 
+            height={100} 
+          />
+          <p>Government</p>
+        </div>
       </div>
 
       <div>
-      <div className="public-policy">
-      <img src="/assets/images/industry-bodies.png" alt="" title=""/>
-      <p>Industry Bodies</p>
-      </div>
-      </div>
-
-      <div>
-      <div className="public-policy">
-      <img src="/assets/images/academia.png" alt="" title=""/>
-      <p>Academia</p>
-      </div>
-      </div>
-
-      <div>
-      <div className="public-policy">
-      <img src="/assets/images/public-affairs.png" alt="" title=""/>
-      <p>Public Affairs</p>
-      </div>
+        <div className="public-policy">
+          <Image 
+            src="/assets/images/ngos.png" 
+            alt="NGOs" 
+            title="NGOs" 
+            width={500} 
+            height={100} 
+          />
+          <p>NGOs</p>
+        </div>
       </div>
 
       <div>
-      <div className="public-policy">
-      <img src="/assets/images/corporates.png" alt="" title=""/>
-      <p>Corporates</p>
-      </div>
+        <div className="public-policy">
+          <Image 
+            src="/assets/images/think-tanks.png" 
+            alt="Think Tanks" 
+            title="Think Tanks" 
+            width={500} 
+            height={100} 
+          />
+          <p>Think Tanks</p>
+        </div>
       </div>
 
       <div>
-      <div className="public-policy">
-      <img src="/assets/images/consultancies.png" alt="" title=""/>
-      <p>Consultancies</p>
+        <div className="public-policy">
+          <Image 
+            src="/assets/images/industry-bodies.png" 
+            alt="Industry Bodies" 
+            title="Industry Bodies" 
+            width={500} 
+            height={100} 
+          />
+          <p>Industry Bodies</p>
+        </div>
       </div>
+
+      <div>
+        <div className="public-policy">
+          <Image 
+            src="/assets/images/academia.png" 
+            alt="Academia" 
+            title="Academia" 
+            width={500} 
+            height={100} 
+          />
+          <p>Academia</p>
+        </div>
+      </div>
+
+      <div>
+        <div className="public-policy">
+          <Image 
+            src="/assets/images/public-affairs.png" 
+            alt="Public Affairs" 
+            title="Public Affairs" 
+            width={500} 
+            height={100} 
+          />
+          <p>Public Affairs</p>
+        </div>
+      </div>
+
+      <div>
+        <div className="public-policy">
+          <Image 
+            src="/assets/images/corporates.png" 
+            alt="Corporates" 
+            title="Corporates" 
+            width={500} 
+            height={100} 
+          />
+          <p>Corporates</p>
+        </div>
+      </div>
+
+      <div>
+        <div className="public-policy">
+          <Image 
+            src="/assets/images/consultancies.png" 
+            alt="Consultancies" 
+            title="Consultancies" 
+            width={500} 
+            height={100} 
+          />
+          <p>Consultancies</p>
+        </div>
       </div>
     </Slider>
   );
